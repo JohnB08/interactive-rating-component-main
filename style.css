@@ -22,7 +22,11 @@ body {
   padding: 0 10%;
   border-radius: 2em;
   color: white;
-  background: hsl(213, 19%, 18%);
+  background: radial-gradient(
+    ellipse at top,
+    hsl(213, 19%, 16%),
+    hsl(213, 19%, 12%)
+  );
 }
 /* only displays on submit */
 #thank-you {
