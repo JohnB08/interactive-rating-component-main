@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* container */
+body {
+  display: grid;
+  place-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+}
+.main {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 10%;
+  border-radius: 2em;
+  color: white;
+  background: hsl(213, 19%, 18%);
+}
+/* only displays on submit */
+#thank-you {
+  align-items: center;
+  text-align: center;
+}
+#rating {
+  background: hsla(216, 12%, 54%, 0.2);
+  padding: 0.5em 1em;
+  border-radius: 10em;
+  color: hsl(25, 97%, 53%);
+}
+
+/* content */
+.imgcontainer {
+  width: 3em;
+  height: 3em;
+  padding: 1em;
+  border-radius: 50%;
+  background: hsla(216, 12%, 54%, 0.2);
+}
+.icon {
+  width: 1em;
+  height: 1em;
+}
+.desc {
+  line-height: 1.5em;
+  color: hsl(216, 12%, 54%);
+}
+
+/* inputs */
+
+.ratecontainer form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.radiobtn {
+  display: none;
+}
+.ratecontainer label {
+  width: 3em;
+  height: 3em;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: hsla(216, 12%, 54%, 0.2);
+  cursor: pointer;
+}
+.ratecontainer label:hover {
+  background: hsl(25, 97%, 53%);
+  color: white;
+}
+#radio1:checked ~ label[for="radio1"] {
+  background: hsl(216, 12%, 54%);
+  color: white;
+}
+#radio2:checked ~ label[for="radio2"] {
+  background: hsl(216, 12%, 54%);
+  color: white;
+}
+#radio3:checked ~ label[for="radio3"] {
+  background: hsl(216, 12%, 54%);
+  color: white;
+}
+#radio4:checked ~ label[for="radio4"] {
+  background: hsl(216, 12%, 54%);
+  color: white;
+}
+#radio5:checked ~ label[for="radio5"] {
+  background: hsl(216, 12%, 54%);
+  color: white;
+}
+.btn {
+  font-family: inherit;
+  letter-spacing: 0.1em;
+  color: white;
+  font-size: 1.2em;
+  padding: 0.75em;
+  text-transform: uppercase;
+  background: hsl(25, 97%, 53%);
+  border: 0;
+  border-radius: 10em;
+}
+.btn:hover,
+.btn:active {
+  color: hsl(25, 97%, 53%);
+  background: white;
+}
+
+/* attribution */
+footer {
+  margin-top: 2em;
+  background: hsl(25, 97%, 53%);
+  border-radius: 10em;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: hsl(216, 12%, 8%);
+}
