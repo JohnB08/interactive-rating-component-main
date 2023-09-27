@@ -9,7 +9,7 @@ body {
   place-content: center;
   width: 100vw;
   height: 100vh;
-  background: hsl(216, 12%, 8%);
+  background: radial-gradient(hsl(216, 12%, 10%), hsl(216, 12%, 6%));
   font-family: "Overpass", sans-serif;
   font-size: 15px;
 }
@@ -131,4 +131,9 @@ footer {
 }
 .attribution a {
   color: hsl(216, 12%, 8%);
+}
+@media only screen and (max-width: 450px) {
+  .main {
+    width: 90vw;
+  }
 }
